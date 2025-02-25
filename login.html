@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Inicio de sesión</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/png" href="media/webpage_icon.png">
+</head>
+
+<div class="top-bar">
+  <img src="media/logo.png" alt="Logo" class="logo">
+</div>
+
+<body class="login-page">
+  <div class="form-container">
+    <h2>Iniciar sesión</h2>
+    <form id="loginForm">
+      <label for="email">Correo electrónico:</label>
+      <input type="email" id="email" name="email" autocomplete="email" required>
+      
+      <label for="password">Contraseña:</label>
+      <input type="password" id="password" name="password" autocomplete="current-password" required>
+      
+      <button type="submit">Iniciar sesión</button>
+    </form>
+    <p>No tienes cuenta? <a href="register.html">Registrarse</a></p>
+  </div>
+
+  <script src="login.js"></script>
+</body>
+<footer class="pie-pagina">
+  <div class="contenedor-footer">
+      <div class="logo-footer">
+          <img src="media/logo.png" alt="Logo Pera" style="height: 50px;">
+      </div>
+      <div class="informacion-footer">
+          <p>&copy; 2025 Mundo3D Corporation. Todos los derechos reservados.</p>
+          <p><a href="#">Política de privacidad</a> | <a href="#">Términos y condiciones</a></p>
+      </div>
+      <div class="redes-sociales">
+          <a href="#"><img src="media/face.png" alt="Facebook" class="icono-red-social"></a>
+          <a href="#"><img src="media/twitter.png" alt="Twitter" class="icono-red-social"></a>
+          <a href="#"><img src="media/insta.png" alt="Instagram" class="icono-red-social"></a>
+      </div>
+  </div>
+</footer>
+</html>
+

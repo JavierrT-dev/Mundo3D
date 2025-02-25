@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mundo3D</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="media/webpage_icon.png">
+
+</head>
+<body>
+
+    <div class="top-bar">
+        <img src="media/logo.png" alt="Logo" class="logo">
+        <a href="login.html" class="login">Iniciar sesión </a>
+        <a href="register.html" class="register">Registrarse</a>
+
+      </div>      
+
+    <div class="content-1">
+
+        <div class="video-container">
+            <video class="video-background" autoplay muted loop>
+                <source src="media/Printer.mp4" type="video/mp4">
+                Tu navegador no soporta el video.
+            </video>
+            <div class="overlay-text">
+                <h3>Impresión y Modelado en 3D</h3>
+                <p>Servicio de impresion 3d en Monterrey en diversos materiales
+                    como PLA,ABS,PETG,PETG-CF y TPU.
+                </p>
+                <button>Imprime Ya!</button>
+            </div>
+        </div>
+        <h1>¿Cómo Funciona?</h1>
+        <p>
+            En Mundo 3D, ofrecemos un servicio completo de impresión 3D. Comienza enviándonos tu archivo en formatos 
+            como STL o OBJ, y seleccionando los detalles de tu pedido, como material y acabado. Nuestro equipo revisa 
+            y optimiza tu diseño para asegurar la mejor calidad antes de imprimirlo con tecnología avanzada y materiales
+            de alta calidad. Tras la impresión, realizamos un exhaustivo control de calidad y preparamos tu producto para 
+            el envío. Nos encargamos de todo, asegurando una distribución rápida y segura, para que recibas tu pieza de 
+            manera confiable y sin complicaciones.
+        </p>
+        <div class="image-container">
+            <div class="image-box">
+                <img src="media/icon_upload.png" alt="Imagen 1">
+                <p>
+                    Ingresa los archivos de formato .stl o .obj que deseas imprimir,
+                    después utiliza nuestro menu de personalizacion para poder ajustar
+                    y elegir la configuración mas adecuada para ti y tu modelo.</p>
+            </div>
+            <div class="image-box">
+                <img src="media/icon_print.png" alt="Imagen 2">
+                <p>Nuestra maquinaria se encargaria del proceso de producción de tu
+                    pieza. Este proceso puede variar en tiempo por disponibilidad y 
+                    personalización dependiendo de tus necesidades.</p>
+            </div>
+            <div class="image-box">
+                <img src="media/icon_deliver.png" alt="Imagen 3">
+                <p>Despues de un exhaustivo control de calidad, tu modelo 3d seria 
+                    empaquetado y enviado hasta tu domicilio. Actualmente ofrecemos 
+                    entregas en toda el área metropolitana.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="content-2">
+        <h2>Nuestro Trabajo</h2>
+        <div class="work-image-container">
+            <div class="work-box">
+                <img src="media/img_1.jpg" alt="Imagen 1">
+            </div>
+            <div class="work-box">
+                <img src="media/img_2.jpg" alt="Imagen 2">
+            </div>
+            <div class="work-box">
+                <img src="media/img_3.jpg" alt="Imagen 3">
+            </div>
+        </div>
+
+        <div class="work-image-container">
+            <div class="work-box">
+                <img src="media/img_4.jpg" alt="Imagen 1">
+            </div>
+            <div class="work-box">
+                <img src="media/img_5.jpg" alt="Imagen 2">
+            </div>
+            <div class="work-box">
+                <img src="media/img_6.jpg" alt="Imagen 3">
+            </div>
+    </div>
+
+    <div class="content-3">
+        <h4>Nuestros Materiales</h4>
+        <p>En Mundo 3D, trabajamos con una amplia variedad de materiales para ofrecer soluciones de impresión y modelado 
+            adaptadas a cada necesidad. Utilizamos resina para lograr piezas con gran detalle y acabados suaves, filamento 
+            para impresiones versátiles y resistentes, y metal para proyectos que requieren máxima durabilidad y precisión. 
+            Gracias a esta diversidad de materiales, podemos desarrollar desde prototipos funcionales hasta productos finales 
+            con alta calidad y definición.
+        </p>
+        <div class="material-image-container">
+            <div class="material-box">
+                <img src="media/material_1.jpg" alt="Imagen 1">
+                <p>El PLA es un plástico de bajo costo, perfecto para prototipos y piezas funcionales.</p>
+            </div>
+            <div class="material-box">
+                <img src="media/material_2.jpg" alt="Imagen 2">
+                <p>El ABS es un polímero económico, ideal para piezas que requieran resistencia mecánica.</p>
+            </div>
+            <div class="material-box">
+                <img src="media/material_3.jpg" alt="Imagen 3">
+                <p>El PETG-CF es un polímero endurecido con Fibra de Carbono, ideal para piezas que requieran 
+                    resistencia mecánica y térmica.</p>
+            </div>
+            <div class="material-box">
+                <img src="media/material_4.jpg" alt="Imagen 4">
+                <p>El PETG es un polímero perfecto para desarrollar piezas que requieran de una gran fuerza de 
+                    impacto y condiciones al aire libre.</p>
+            </div>
+            <div class="material-box">
+                <img src="media/material_5.jpg" alt="Imagen 5">
+                <p>El TPU es un polímero excelente para aplicaciones que requieran de elasticidad, debido a que 
+                    permite que la pieza se estire y regrese a su forma original.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="content-4">
+        <h5>Contáctanos</h5>
+        <form id="contactForm">
+            <label for="name">Nombre:</label>
+            <input type="text" id="name" name="name" required>
+            
+            <label for="message">Mensaje de pedido:</label>
+            <textarea id="message" name="message" required></textarea>
+            
+            <button type="submit">Enviar</button>
+        </form>
+        <script src="contact.js"></script>
+    </div>
+</body>
+<footer class="pie-pagina">
+    <div class="contenedor-footer">
+        <div class="logo-footer">
+            <img src="media/logo.png" alt="Logo Pera" style="height: 50px;">
+        </div>
+        <div class="informacion-footer">
+            <p>&copy; 2025 Mundo3D Corporation. Todos los derechos reservados.</p>
+            <p><a href="#">Política de privacidad</a> | <a href="#">Términos y condiciones</a></p>
+        </div>
+        <div class="redes-sociales">
+            <a href="#"><img src="media/face.png" alt="Facebook" class="icono-red-social"></a>
+            <a href="#"><img src="media/twitter.png" alt="Twitter" class="icono-red-social"></a>
+            <a href="#"><img src="media/insta.png" alt="Instagram" class="icono-red-social"></a>
+        </div>
+    </div>
+</footer>
+</html>

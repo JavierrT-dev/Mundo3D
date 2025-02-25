@@ -1,0 +1,815 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  width: 100vw;
+}
+
+.top-bar {
+  width: 100%;
+  height: 60px;
+  background-color: #2C3E50;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  padding: 0 20px;
+}
+
+.top-bar .login {
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+  margin-left: 84%;
+  text-decoration: none;
+  font-family: Arial, Helvetica, sans-serif;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+  background-color: #476a8d;
+  padding: 10px 8px;
+  border-radius: 15px;
+  display: inline-block;
+  border: 2px solid #3a5773;
+}
+
+.top-bar .register {
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+  margin-left: auto;
+  text-decoration: none;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.top-bar .register:hover {
+  text-decoration: underline;
+}
+
+.top-bar .login:hover {
+  background-color: rgb(0, 172, 184);
+  transform: scale(1.1);
+}
+
+.logo {
+  position: fixed;
+  top: 8px;
+  left: 20px;
+  width: 55px;
+  height: auto;
+  z-index: 1100;
+}
+
+.content-1 {
+  margin-top: 80px;
+  padding: 20px;
+  height: 1030px;
+  background-color: #f4f4f4;
+}
+
+.content-1 h1 {
+  font-size: 45px;
+  margin-bottom: 30px;
+  color: #252525;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+}
+
+.content-1 p {
+  margin-top: 20px;
+  font-size: 15px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: rgb(46, 46, 46);
+  text-align: justify;
+  max-width: 1250px;
+  margin: 0 auto;
+}
+
+.content-2 {
+  margin-top: 80px;
+  padding: 20px;
+  height: 900px;
+  background-color: #ffffff;
+}
+
+.content-3 {
+  margin-top: 10px;
+  padding: 20px;
+  height: 650px;
+  background-color: #ffffff;
+}
+
+.content-4 {
+  margin-top: 10px;
+  padding: 20px;
+  height: 600px;
+  background-color: #ffffff;
+}
+
+.content-2 h2 {
+  font-size: 45px;
+  color: #252525;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.content-3 h4 {
+  font-size: 45px;
+  color: #252525;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+.content-3 p {
+  margin-top: 10px;
+  font-size: 15px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: rgb(46, 46, 46);
+  text-align: justify;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.content-4 h5 {
+  font-size: 45px;
+  color: #252525;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+.video-container {
+  position: relative;
+  width: 100%;
+  height: 420px;
+}
+
+.video-background {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: blur(2px);
+}
+
+.overlay-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  text-align: center;
+  font-family: Arial, sans-serif;
+}
+
+.overlay-text h3 {
+  font-size: 3rem;
+  margin-bottom: 10px;
+  text-shadow: 1px 1px 2px black;
+}
+
+.overlay-text p {
+  font-size: 1.5rem;
+  color: white;
+  text-align: center;
+}
+
+.overlay-text button {
+  background-color: #007BFF;
+  border: 2px solid #3a5773;
+  height: 40px;
+  width: 180px;
+  color: #ffffff;
+  font-size: 20px;
+  border-radius: 6px;
+  margin-top: 30px;
+  font-family: Arial, Helvetica, sans-serif;
+  transition: transform 0.2s ease-in-out;
+  cursor: pointer;
+}
+
+.overlay-text button:hover {
+  animation: balanceo 0.5s ease-in-out infinite alternate;
+  background-color: #55a7ff;
+  cursor: pointer;
+}
+
+.image-container {
+  display: flex;
+  gap: 50px;
+  align-items: center;
+  margin-top: 20px;
+  padding: 0 5%;
+}
+
+.image-box {
+  text-align: center;
+  width: 50%;
+}
+
+.image-box img {
+  width: 65%;
+  max-width: 500px;
+  height: auto;
+  border-radius: 10px;
+}
+
+.image-box p {
+  margin-top: 8px;
+  font-size: 16px;
+  text-align: justify;
+  color: #000000;
+  font-family: Arial, Helvetica, sans-serif;
+  border-radius: 2px;
+}
+
+.content-1 h1 {
+  margin-top: 70px;
+}
+
+.work-box {
+  text-align: center;
+  width: 50%;
+  overflow: hidden;
+}
+
+.work-box img {
+  width: 350px;
+  height: 350px;
+  transition: transform 0.3s ease;
+}
+
+.work-box img:hover {
+  transform: scale(1.1);
+}
+
+.work-image-container {
+  margin-bottom: 50px;
+  display: flex;
+  gap: 1px;
+  align-items: center;
+  margin-top: 20px;
+  padding: 0 5%;
+}
+
+.material-box {
+  text-align: center;
+  width: 50%;
+  overflow: hidden;
+  position: relative;
+}
+
+.material-image-container {
+  margin-bottom: 50px;
+  display: flex;
+  gap: 12px;
+  align-items: flex-start;
+  margin-top: 40px;
+  padding: 0 5%;
+  justify-content: flex-start;
+}
+
+.material-box img {
+  width: 250px;
+  height: 330px;
+  object-fit: cover;
+  flex-shrink: 0;
+}
+
+.material-box p {
+  margin-top: 8px;
+  font-size: 12px;
+  text-align: justify;
+  color: #000000;
+  font-family: Arial, Helvetica, sans-serif;
+  max-width: 210px;
+  margin: 0 auto;
+  margin-top: 13px;
+  overflow: hidden;
+}
+
+@keyframes balanceo {
+  0% { transform: rotateZ(-5deg); }
+  100% { transform: rotateZ(5deg); }
+}
+
+/* login.html */
+.login-page .form-container {
+  max-width: 400px;
+  margin: 50px auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.login-page h2 {
+  text-align: center;
+  color: #333;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 27px;
+  margin-top: 50px;
+  margin-bottom: 60px;
+}
+
+.login-page label {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 15px;
+}
+
+.login-page label {
+  font-weight: bold;
+}
+
+.login-page input {
+  width: 100%;
+  padding: 8px;
+  margin: 5px 0 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.login-page button {
+  width: 100%;
+  padding: 10px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 15px;
+}
+
+.login-page button:hover {
+  background-color: #0056b3;
+}
+
+.login-page p {
+  font-family: Arial, Helvetica, sans-serif;
+  margin-top: 50px;
+  font-size: 14px;
+}
+
+/* register.html */
+.register-page .form-container {
+  max-width: 400px;
+  margin: 50px auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.register-page h2 {
+  text-align: center;
+  color: #333;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 27px;
+  margin-top: 50px;
+  margin-bottom: 60px;
+}
+
+.register-page label {
+  font-weight: bold;
+  display: block;
+  margin-top: 10px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 15px;
+}
+
+.register-page input {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.register-page button {
+  width: 100%;
+  padding: 10px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 30px;
+}
+
+.register-page button:hover {
+  background-color: #0056b3;
+}
+
+.register-page p {
+  text-align: center;
+  margin-top: 30px;
+  font-size: 14px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.register-page a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.register-page a:hover {
+  text-decoration: underline;
+}
+
+/* seccion contacto */
+#contactForm {
+  background-color: #a3b6f6;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 500px;
+  margin: 0 auto;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+#contactForm label {
+  display: block;
+  margin-bottom: 8px;
+  font-size: 16px;
+  color: #000000;
+  font-weight: bold;
+}
+
+#contactForm input,
+#contactForm textarea {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 15px;
+  border: 2px solid #c4d1e0;
+  border-radius: 4px;
+  font-size: 16px;
+  color: #333;
+  background-color: #f7f8fa;
+  transition: border-color 0.3s ease;
+}
+
+#contactForm input:focus,
+#contactForm textarea:focus {
+  border-color: #1e3a5f;
+  outline: none;
+}
+
+#contactForm button {
+  background-color: #1e3a5f;
+  color: white;
+  font-size: 16px;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  width: 100%;
+  transition: background-color 0.3s ease;
+}
+
+#contactForm button:hover {
+  background-color: #2a4a75;
+}
+
+#contactForm button:active {
+  background-color: #1a3a5d;
+}
+
+#contactForm textarea {
+  height: 150px;
+  resize: vertical;
+}
+
+#contactForm .error {
+  color: red;
+  font-size: 14px;
+  margin-top: -10px;
+  margin-bottom: 10px;
+}
+
+.pie-pagina {
+  background-color: #191919;
+  color: white;
+  padding: 20px 0;
+  text-align: center;
+  font-family: Arial, sans-serif;
+}
+
+.contenedor-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  flex-wrap: wrap;
+}
+
+.logo-footer img {
+  height: 50px;
+}
+
+.informacion-footer p {
+  margin: 5px 0;
+  font-size: 14px;
+}
+
+.informacion-footer a {
+  color: #ffffff;
+  text-decoration: none;
+  margin: 0 5px;
+}
+
+.redes-sociales {
+  display: flex;
+  gap: 10px;
+}
+
+.icono-red-social {
+  width: 24px;
+  height: 24px;
+  filter: invert();
+}
+
+.redes-sociales a {
+  display: inline-block;
+}
+
+@media (max-width: 768px) {
+  .contenedor-footer {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .redes-sociales {
+    margin-top: 10px;
+  }
+}
+
+@media (max-width: 768px) {
+  .top-bar {
+    justify-content: space-between;
+  }
+  .top-bar .login,
+  .top-bar .register {
+    margin-left: 0;
+    font-size: 14px;
+    padding: 8px 6px;
+  }
+
+  .content-1,
+  .content-2,
+  .content-3,
+  .content-4 {
+    height: auto;
+    padding: 10px;
+  }
+  .content-1 h1,
+  .content-2 h2,
+  .content-3 h4,
+  .content-4 h5 {
+    font-size: 30px;
+  }
+  .content-1 p,
+  .content-3 p {
+    font-size: 14px;
+    max-width: 90%;
+  }
+
+  .video-container {
+    height: 250px;
+  }
+  .overlay-text h3 {
+    font-size: 2rem;
+  }
+  .overlay-text p {
+    font-size: 1rem;
+  }
+  .overlay-text button {
+    width: 150px;
+    font-size: 18px;
+  }
+
+  .image-container {
+    flex-direction: column;
+    gap: 20px;
+    padding: 0 2%;
+  }
+  .image-box {
+    width: 100%;
+  }
+  .image-box img {
+    width: 80%;
+  }
+
+  .work-box,
+  .material-box {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  .work-box img {
+    width: 100%;
+    height: auto;
+  }
+  .material-box img {
+    width: 100%;
+    height: auto;
+  }
+}
+
+@media (max-width: 480px) {
+  .top-bar {
+    flex-direction: column;
+    height: auto;
+    padding: 10px;
+  }
+  .logo {
+    position: relative;
+    margin-bottom: 10px;
+  }
+  .overlay-text h3 {
+    font-size: 1.5rem;
+  }
+  .overlay-text p {
+    font-size: 0.9rem;
+  }
+  .overlay-text button {
+    width: 130px;
+    font-size: 16px;
+  }
+  .content-1 h1,
+  .content-2 h2,
+  .content-3 h4,
+  .content-4 h5 {
+    font-size: 26px;
+  }
+  .content-1 p,
+  .content-3 p {
+    font-size: 13px;
+  }
+}
+
+/* Estilos específicos para el Panel de Administración (excluyendo top bar y footer) */
+.admin-container {
+  font-family: 'Arial', sans-serif;
+  max-width: 1200px;
+  margin: 20px auto;
+  padding: 20px;
+  background: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.admin-container h1 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 20px;
+  font-family: Arial, sans-serif;
+}
+
+/* Estilos de la tabla de usuarios */
+.admin-container table {
+  width: 100%;
+  border-collapse: collapse;
+  background: white;
+  border-radius: 8px;
+  overflow: hidden;
+  font-family: Arial, sans-serif;
+}
+
+.admin-container th, .admin-container td {
+  padding: 12px;
+  border: 1px solid #ddd;
+  text-align: left;
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+}
+
+.admin-container th {
+  background-color: #007bff;
+  color: white;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.admin-container tr:nth-child(even) {
+  background-color: #f8f9fa;
+}
+
+.admin-container tr:hover {
+  background-color: #e9ecef;
+}
+
+/* Estilos para las filas de la tabla (contenido) */
+.admin-container tr.user-row {
+  transition: all 0.3s ease-in-out;
+}
+
+.admin-container tr.user-row td {
+  padding: 15px;
+  font-size: 16px;
+  color: #333;
+}
+
+/* Estilos para los botones de acciones en la tabla */
+.admin-container td button {
+  padding: 10px 15px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 14px;
+  transition: background 0.3s;
+}
+
+.admin-container td button:hover {
+  opacity: 0.8;
+}
+
+.admin-container td .edit {
+  background-color: #ffc107;
+  color: white;
+}
+
+.admin-container td .delete {
+  background-color: #dc3545;
+  color: white;
+}
+
+/* Formulario de edición */
+#editFormContainer {
+  display: none;
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  margin-top: 20px;
+  max-width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: Arial, sans-serif;
+}
+
+#editFormContainer h2 {
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+#editForm label {
+  display: block;
+  margin: 10px 0 5px;
+  font-weight: bold;
+}
+
+#editForm input, #editForm select {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  font-family: Arial, sans-serif;
+}
+
+#editForm button {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 16px;
+  font-family: Arial, sans-serif;
+}
+
+#editForm button[type="submit"] {
+  background-color: #28a745;
+  color: white;
+}
+
+#editForm button[type="button"] {
+  background-color: #dc3545;
+  color: white;
+  margin-top: 10px;
+}
+
+/* Responsividad */
+@media (max-width: 768px) {
+  .admin-container {
+    padding: 15px;
+  }
+  .admin-container table {
+    font-size: 14px;
+  }
+  .admin-container td button {
+    width: 100%;
+    margin-bottom: 5px;
+  }
+}
+
