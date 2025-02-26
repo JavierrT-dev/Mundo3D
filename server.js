@@ -126,6 +126,8 @@ app.post("/contact", async (req, res) => {
   }
 
   try {
+    console.log("Intentando guardar el mensaje:", { name, message }); // Depuración
+
     const newMessage = await prismaClient.message.create({
       data: {
         name,
@@ -138,7 +140,7 @@ app.post("/contact", async (req, res) => {
     res.json({ success: true, message: "Mensaje enviado correctamente." });
   } catch (error) {
     console.error("Error al guardar el mensaje:", error);
-    res.status(500).json({ success: false, message: "Hubo un problema al guardar el mensaje." });
+    res.status(500).json({ success: false, message: `Hubo un problema al guardar el mensaje: ${error.message}` });
   }
 });
 
