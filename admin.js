@@ -1,5 +1,5 @@
 async function fetchUsers() {
-  const response = await fetch("http://localhost:3000/users");
+  const response = await fetch("https://ubiquitous-space-orbit-7vp7666w4q5vhp7rv-3000.app.github.dev/users");
   const users = await response.json();
 
   const table = document.getElementById("userTable");
@@ -22,7 +22,7 @@ async function fetchUsers() {
 
 async function deleteUser(userId) {
   if (confirm("¿Seguro que quieres eliminar este usuario?")) {
-    await fetch(`http://localhost:3000/users/${userId}`, {
+    await fetch(`https://ubiquitous-space-orbit-7vp7666w4q5vhp7rv-3000.app.github.dev/users/${userId}`, {
       method: "DELETE",
     });
     fetchUsers(); // Recargar la lista después de eliminar
@@ -50,7 +50,7 @@ document.getElementById("editForm").addEventListener("submit", async function (e
   const newEmail = document.getElementById("editEmail").value;
   const newRole = document.getElementById("editRole").value;
 
-  await fetch(`http://localhost:3000/users/${userId}`, {
+  await fetch(`https://ubiquitous-space-orbit-7vp7666w4q5vhp7rv-3000.app.github.dev/users/${userId}`, {
     method: "PUT",
     headers: {
       "Content-Type": "application/json",
