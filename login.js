@@ -5,7 +5,7 @@ document.getElementById("loginForm").addEventListener("submit", async function (
   const password = document.getElementById("password").value;
 
   try {
-    const response = await fetch("https://ubiquitous-space-orbit-7vp7666w4q5vhp7rv-3000.app.github.dev/login.html", {
+    const response = await fetch("https://ubiquitous-space-orbit-7vp7666w4q5vhp7rv-3000.githubpreview.dev/login", { 
       method: "POST",
       headers: {
         "Content-Type": "application/json",
