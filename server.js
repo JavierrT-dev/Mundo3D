@@ -183,7 +183,7 @@ app.listen(3000, "0.0.0.0", () => {
   console.log("Servidor corriendo en el puerto 3000");
 });
 
-import dotenv from 'dotenv';
+const dotenv = require('dotenv');
 dotenv.config();
 
 console.log("DATABASE_URL:", process.env.DATABASE_URL);
