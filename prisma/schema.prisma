@@ -22,7 +22,7 @@ model user {
 
 
 
-model Message {
+model message {
   id        Int      @id @default(autoincrement())
   name      String
   message   String
