@@ -14,7 +14,7 @@ document.getElementById("contactForm").addEventListener("submit", async function
         console.log("Enviando mensaje con:", { name, message }); // Depuración
 
         // Realizar la solicitud POST al servidor
-        const response = await fetch("http://localhost:3000/contact", {
+        const response = await fetch("https://ubiquitous-space-orbit-7vp7666w4q5vhp7rv-3000.app.github.dev/contact", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json",
