@@ -29,9 +29,16 @@
                 <p>Servicio de impresion 3d en Monterrey en diversos materiales
                     como PLA,ABS,PETG,PETG-CF y TPU.
                 </p>
-                <button>Imprime Ya!</button>
+                <button id="botonRedirigir">Imprime Ya!</button>
             </div>
+
+            <script>
+                document.getElementById("botonRedirigir").addEventListener("click", function() {
+                    window.location.href = "render.html";
+                });
+            </script>
         </div>
+        
         <h1>¿Cómo Funciona?</h1>
         <p>
             En Mundo 3D, ofrecemos un servicio completo de impresión 3D. Comienza enviándonos tu archivo en formatos 

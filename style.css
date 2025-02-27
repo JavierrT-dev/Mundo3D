@@ -69,8 +69,8 @@ body {
 .content-1 {
   margin-top: 80px;
   padding: 20px;
-  height: 1030px;
-  background-color: #f4f4f4;
+  height: 1150px;
+  background-color: #ffffff;
 }
 
 .content-1 h1 {
@@ -812,4 +812,5 @@ body {
     margin-bottom: 5px;
   }
 }
+
 
