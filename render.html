@@ -5,12 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Visor de Modelos 3D - OBJ & STL</title>
     <link rel="stylesheet" href="estilo.css">
+    <link rel="stylesheet" href="style.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/three@0.128/examples/js/loaders/OBJLoader.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/three@0.128/examples/js/loaders/STLLoader.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/three@0.128/examples/js/controls/OrbitControls.js"></script>
 </head>
+
 <body>
+    <div class="top-bar-render">
+      <img src="media/logo.png" alt="Logo" class="logo">
+    </div>
+
     <input type="file" id="fileInput" accept=".obj,.stl">
     
     <div id="container">
@@ -26,5 +32,22 @@
     </div>
 
     <script src="script.js"></script>
+    
+    <footer class="pie-pagina">
+      <div class="contenedor-footer">
+          <div class="logo-footer">
+              <img src="media/logo.png" alt="Logo Pera" style="height: 50px;">
+          </div>
+          <div class="informacion-footer">
+              <p>&copy; 2025 Mundo3D Corporation. Todos los derechos reservados.</p>
+              <p><a href="#">Política de privacidad</a> | <a href="#">Términos y condiciones</a></p>
+          </div>
+          <div class="redes-sociales">
+              <a href="#"><img src="media/face.png" alt="Facebook" class="icono-red-social"></a>
+              <a href="#"><img src="media/twitter.png" alt="Twitter" class="icono-red-social"></a>
+              <a href="#"><img src="media/insta.png" alt="Instagram" class="icono-red-social"></a>
+          </div>
+      </div>
+    </footer>
 </body>
 </html>
